@@ -1,0 +1,504 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\proyectocrud_bd\\codigos\\sqlconection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\codigos\\sqlconection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\proyectocrud_bd\\codigos\\uistyle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\codigos\\uistyle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\proyectocrud_bd\\forms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\forms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\proyectocrud_bd\\forms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\forms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\proyectocrud_bd\\forms\\ingresoequipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\forms\\ingresoequipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\proyectocrud_bd\\forms\\tecnicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\forms\\tecnicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\proyectocrud_bd\\forms\\tecnicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\forms\\tecnicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\proyectocrud_bd\\forms\\ingresoclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\forms\\ingresoclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\proyectocrud_bd\\forms\\diagnosticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\forms\\diagnosticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\proyectocrud_bd\\forms\\ingresoequipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\forms\\ingresoequipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\proyectocrud_bd\\bdsql\\inicializador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\bdsql\\inicializador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ECE8D82-7DBF-4FB3-8309-2CCE87B8ACF5}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\proyectocrud_bd\\forms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2ECE8D82-7DBF-4FB3-8309-2CCE87B8ACF5}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\forms\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\proyectocrud_bd\\forms\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\forms\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\proyectocrud_bd\\forms\\ingresoequipos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\forms\\ingresoequipos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\proyectocrud_bd\\forms\\ingresoclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\forms\\ingresoclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\proyectocrud_bd\\forms\\diagnosticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\forms\\diagnosticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ECE8D82-7DBF-4FB3-8309-2CCE87B8ACF5}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\proyectocrud_bd\\forms\\tecnicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2ECE8D82-7DBF-4FB3-8309-2CCE87B8ACF5}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\forms\\tecnicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\proyectocrud_bd\\forms\\tecnicos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\forms\\tecnicos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ECE8D82-7DBF-4FB3-8309-2CCE87B8ACF5}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\proyectocrud_bd\\forms\\diagnosticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2ECE8D82-7DBF-4FB3-8309-2CCE87B8ACF5}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\forms\\diagnosticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\proyectocrud_bd\\bdsql\\equipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\bdsql\\equipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\proyectocrud_bd\\forms\\diagnosticos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\forms\\diagnosticos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\proyectocrud_bd\\bdsql\\diagnosticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\bdsql\\diagnosticos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\proyectocrud_bd\\bdsql\\tecnico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\bdsql\\tecnico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\proyectocrud_bd\\bdsql\\tecnicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\bdsql\\tecnicos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2ECE8D82-7DBF-4FB3-8309-2CCE87B8ACF5}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\proyectocrud_bd\\forms\\ingresoequipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2ECE8D82-7DBF-4FB3-8309-2CCE87B8ACF5}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\forms\\ingresoequipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\proyectocrud_bd\\codigos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\codigos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\proyectocrud_bd\\bdsql\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\bdsql\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\proyectocrud_bd\\proyectocrud_bd.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\proyectocrud_bd.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Main.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\Main.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Main.cs",
+              "RelativeToolTip": "ProyectoCRUD_BD\\Forms\\Main.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T04:29:31.548Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Main.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Main.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\Main.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Main.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoCRUD_BD\\Forms\\Main.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T21:03:21.302Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IngresoEquipos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\IngresoEquipos.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\IngresoEquipos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\IngresoEquipos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoCRUD_BD\\Forms\\IngresoEquipos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T09:01:30.04Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UIStyle.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Codigos\\UIStyle.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Codigos\\UIStyle.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Codigos\\UIStyle.cs",
+              "RelativeToolTip": "ProyectoCRUD_BD\\Codigos\\UIStyle.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowKsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T20:40:19.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SQLCONECTION.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Codigos\\SQLCONECTION.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Codigos\\SQLCONECTION.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Codigos\\SQLCONECTION.cs",
+              "RelativeToolTip": "ProyectoCRUD_BD\\Codigos\\SQLCONECTION.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T02:28:40.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IngresoCLientes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\IngresoCLientes.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\IngresoCLientes.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\IngresoCLientes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoCRUD_BD\\Forms\\IngresoCLientes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T08:44:36.162Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Tecnicos.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Tecnicos.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\Tecnicos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Tecnicos.cs",
+              "RelativeToolTip": "ProyectoCRUD_BD\\Forms\\Tecnicos.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAUwHgAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T05:20:27.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Tecnicos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Tecnicos.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\Tecnicos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Tecnicos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoCRUD_BD\\Forms\\Tecnicos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T20:32:36.724Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Diagnosticos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Diagnosticos.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\Diagnosticos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Diagnosticos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoCRUD_BD\\Forms\\Diagnosticos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T09:59:54.073Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IngresoEquipos.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\IngresoEquipos.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\IngresoEquipos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\IngresoEquipos.cs",
+              "RelativeToolTip": "ProyectoCRUD_BD\\Forms\\IngresoEquipos.cs",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAAwM4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T03:57:39.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Inicializador.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\BDSQL\\Inicializador.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\BDSQL\\Inicializador.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\BDSQL\\Inicializador.cs",
+              "RelativeToolTip": "ProyectoCRUD_BD\\BDSQL\\Inicializador.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwAIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T05:22:53.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Main.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Main.Designer.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\Main.Designer.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Main.Designer.cs",
+              "RelativeToolTip": "ProyectoCRUD_BD\\Forms\\Main.Designer.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAjwEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T05:12:31.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IngresoEquipos.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\IngresoEquipos.Designer.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\IngresoEquipos.Designer.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\IngresoEquipos.Designer.cs",
+              "RelativeToolTip": "ProyectoCRUD_BD\\Forms\\IngresoEquipos.Designer.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T09:01:21.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Main.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Main.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\Main.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Main.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoCRUD_BD\\Forms\\Main.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T05:12:55.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IngresoCLientes.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\IngresoCLientes.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\IngresoCLientes.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\IngresoCLientes.cs",
+              "RelativeToolTip": "ProyectoCRUD_BD\\Forms\\IngresoCLientes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T03:22:24.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Diagnosticos.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Diagnosticos.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\Diagnosticos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Diagnosticos.cs",
+              "RelativeToolTip": "ProyectoCRUD_BD\\Forms\\Diagnosticos.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T09:50:23.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Tecnicos.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Tecnicos.Designer.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\Tecnicos.Designer.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Tecnicos.Designer.cs",
+              "RelativeToolTip": "ProyectoCRUD_BD\\Forms\\Tecnicos.Designer.cs",
+              "ViewState": "AgIAANMAAAAAAAAAAAArwDEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T20:21:52.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Tecnicos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Tecnicos.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\Tecnicos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Tecnicos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoCRUD_BD\\Forms\\Tecnicos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T05:17:37.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Diagnosticos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Diagnosticos.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\Diagnosticos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Diagnosticos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoCRUD_BD\\Forms\\Diagnosticos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T04:53:12.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Equipos.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\BDSQL\\Equipos.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\BDSQL\\Equipos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\BDSQL\\Equipos.cs",
+              "RelativeToolTip": "ProyectoCRUD_BD\\BDSQL\\Equipos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T07:51:27.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Diagnosticos.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Diagnosticos.Designer.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\Diagnosticos.Designer.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\Diagnosticos.Designer.cs",
+              "RelativeToolTip": "ProyectoCRUD_BD\\Forms\\Diagnosticos.Designer.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAMBtwBYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T09:50:43.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Diagnosticos.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\BDSQL\\Diagnosticos.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\BDSQL\\Diagnosticos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\BDSQL\\Diagnosticos.cs",
+              "RelativeToolTip": "ProyectoCRUD_BD\\BDSQL\\Diagnosticos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T09:01:06.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Tecnico.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\BDSQL\\Tecnico.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\BDSQL\\Tecnico.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\BDSQL\\Tecnico.cs",
+              "RelativeToolTip": "ProyectoCRUD_BD\\BDSQL\\Tecnico.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T09:42:28.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Tecnicos.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\BDSQL\\Tecnicos.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\BDSQL\\Tecnicos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\BDSQL\\Tecnicos.cs",
+              "RelativeToolTip": "ProyectoCRUD_BD\\BDSQL\\Tecnicos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T09:00:54.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IngresoEquipos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\IngresoEquipos.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\IngresoEquipos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Forms\\IngresoEquipos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoCRUD_BD\\Forms\\IngresoEquipos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T03:56:46.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Codigos\\Program.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Codigos\\Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\Codigos\\Program.cs",
+              "RelativeToolTip": "ProyectoCRUD_BD\\Codigos\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T02:39:00.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Clientes.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\BDSQL\\Clientes.cs",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\BDSQL\\Clientes.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\BDSQL\\Clientes.cs",
+              "RelativeToolTip": "ProyectoCRUD_BD\\BDSQL\\Clientes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T07:51:14.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ProyectoCRUD_BD.csproj",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj",
+              "RelativeDocumentMoniker": "ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj",
+              "RelativeToolTip": "ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-18T04:46:32.46Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
