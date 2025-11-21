@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\CTE-Base-de-datos\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\cte-base-de-datos\\proyectocrud_bd\\codigos\\sqlconection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\codigos\\sqlconection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\cte-base-de-datos\\proyectocrud_bd\\forms\\botonesrepuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\forms\\botonesrepuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -61,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\cte-base-de-datos\\proyectocrud_bd\\codigos\\roundedgradientbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\codigos\\roundedgradientbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\cte-base-de-datos\\proyectocrud_bd\\codigos\\sqlconection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|solutionrelative:proyectocrud_bd\\codigos\\sqlconection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E331336E-1AA2-CC6A-7A23-957F82634E10}|ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj|c:\\users\\usuario\\documents\\proyectocrud_bd\\cte-base-de-datos\\proyectocrud_bd\\forms\\botonesinicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -178,7 +178,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 45,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
@@ -206,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AlertForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\CTE-Base-de-datos\\ProyectoCRUD_BD\\Codigos\\AlertForm.cs",
               "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Codigos\\AlertForm.cs",
@@ -217,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AlertForm.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\CTE-Base-de-datos\\ProyectoCRUD_BD\\Codigos\\AlertForm.cs",
               "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Codigos\\AlertForm.cs",
@@ -229,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "BotonesClientes.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\CTE-Base-de-datos\\ProyectoCRUD_BD\\Forms\\BotonesClientes.Designer.cs",
               "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\BotonesClientes.Designer.cs",
@@ -241,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "BotonesClientes.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\CTE-Base-de-datos\\ProyectoCRUD_BD\\Forms\\BotonesClientes.cs",
               "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\BotonesClientes.cs",
@@ -254,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BotonesRepuesto.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\CTE-Base-de-datos\\ProyectoCRUD_BD\\Forms\\BotonesRepuesto.cs",
               "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\BotonesRepuesto.cs",
@@ -266,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ObtencionRepuestos.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\CTE-Base-de-datos\\ProyectoCRUD_BD\\Forms\\ObtencionRepuestos.cs",
               "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\ObtencionRepuestos.cs",
@@ -279,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UIStyle.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\CTE-Base-de-datos\\ProyectoCRUD_BD\\Codigos\\UIStyle.cs",
               "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Codigos\\UIStyle.cs",
@@ -291,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Diagnosticos.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\CTE-Base-de-datos\\ProyectoCRUD_BD\\Forms\\Diagnosticos.cs",
               "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\Diagnosticos.cs",
@@ -304,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Diagnosticos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\CTE-Base-de-datos\\ProyectoCRUD_BD\\Forms\\Diagnosticos.cs",
               "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\Diagnosticos.cs",
@@ -315,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "BotonesFacturas.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\CTE-Base-de-datos\\ProyectoCRUD_BD\\Forms\\BotonesFacturas.cs",
               "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\BotonesFacturas.cs",
@@ -328,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "RoundedGradientButton.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\CTE-Base-de-datos\\ProyectoCRUD_BD\\Codigos\\RoundedGradientButton.cs",
               "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Codigos\\RoundedGradientButton.cs",
@@ -340,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\CTE-Base-de-datos\\ProyectoCRUD_BD\\Codigos\\Program.cs",
               "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Codigos\\Program.cs",
@@ -352,15 +352,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 0,
               "Title": "SQLCONECTION.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\CTE-Base-de-datos\\ProyectoCRUD_BD\\Codigos\\SQLCONECTION.cs",
               "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Codigos\\SQLCONECTION.cs",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\CTE-Base-de-datos\\ProyectoCRUD_BD\\Codigos\\SQLCONECTION.cs",
               "RelativeToolTip": "ProyectoCRUD_BD\\Codigos\\SQLCONECTION.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-20T22:09:58.701Z"
+              "WhenOpened": "2025-11-20T22:09:58.701Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -587,7 +588,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "IngresoCLientes.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\CTE-Base-de-datos\\ProyectoCRUD_BD\\Forms\\IngresoCLientes.cs",
               "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\IngresoCLientes.cs",
@@ -600,7 +601,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "IngresoCLientes.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\CTE-Base-de-datos\\ProyectoCRUD_BD\\Forms\\IngresoCLientes.cs",
               "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\IngresoCLientes.cs",
@@ -671,7 +672,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BotonesRepuesto.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\CTE-Base-de-datos\\ProyectoCRUD_BD\\Forms\\BotonesRepuesto.cs",
               "RelativeDocumentMoniker": "ProyectoCRUD_BD\\Forms\\BotonesRepuesto.cs",
