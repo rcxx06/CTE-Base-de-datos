@@ -13,13 +13,14 @@ namespace ProyectoCRUD_BD.Forms
         public BotonesRepuesto()
         {
             InitializeComponent();
+            UIStyles.ApplyAllStyles(this);
         }
 
         private void btnAtrasRepuesto_Click(object sender, EventArgs e)
         {
             FormManager.CargarEnPanelMenu(new BotonesInicio());
             FormManager.CargarEnPanelContenido(new Presentacion());
-            
+
         }
 
         private void btnRepuesto_Click(object sender, EventArgs e)
@@ -40,6 +41,11 @@ namespace ProyectoCRUD_BD.Forms
         private void BtnProveedores_Click(object sender, EventArgs e)
         {
             FormManager.CargarEnPanelContenido(new Proovedores());
+        }
+
+        private void BotonesRepuesto_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

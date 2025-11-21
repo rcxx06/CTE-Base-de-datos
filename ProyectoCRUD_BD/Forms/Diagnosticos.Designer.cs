@@ -57,11 +57,12 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(112, 15);
+            label1.Location = new Point(112, 5);
             label1.Name = "label1";
             label1.Size = new Size(134, 15);
             label1.TabIndex = 0;
             label1.Text = "Numero De Diagnostico";
+            label1.Click += label1_Click;
             // 
             // label2
             // 

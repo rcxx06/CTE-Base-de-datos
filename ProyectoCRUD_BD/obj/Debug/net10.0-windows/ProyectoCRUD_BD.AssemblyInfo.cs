@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyectoCRUD_BD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c183feaaef88810ffc3d8cf417a2c3b17bd40e11")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5502c1ce53ad3e793c2e24050e2424c7d81740c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyectoCRUD_BD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyectoCRUD_BD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

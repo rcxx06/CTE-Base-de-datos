@@ -8,14 +8,11 @@ namespace ProyectoCRUD_BD
 {
     public partial class IngresoCLientes : Form
     {
-        //string dbPath = @"C:\Users\Usuario\Documents\ProyectoCRUD_BD\ProyectoCRUD_BD\bin\Debug\net10.0-windows\CTE.db";
-
         public IngresoCLientes()
         {
             InitializeComponent();
             CargarClientes();
             UIStyles.ApplyAllStyles(this);
-
         }
 
         private SqlConnection GetConnection()
@@ -27,13 +24,13 @@ namespace ProyectoCRUD_BD
         {
             if (string.IsNullOrEmpty(Id_Cliente.Text))
             {
-                MessageBox.Show("Debe ingresar un ID para el cliente.");
+                UIStyles.ShowAlert("Debe ingresar un ID para el cliente.");
                 return;
             }
 
             if (!int.TryParse(Id_Cliente.Text, out int clienteId))
             {
-                MessageBox.Show("El ID debe ser un número válido.");
+                UIStyles.ShowAlert("El ID debe ser un número válido.");
                 return;
             }
 
@@ -47,7 +44,7 @@ namespace ProyectoCRUD_BD
             int count = (int)check.ExecuteScalar();
             if (count > 0)
             {
-                MessageBox.Show("El ID ingresado ya existe. Ingrese otro ID.");
+                UIStyles.ShowAlert("El ID ingresado ya existe. Ingrese otro ID.");
                 return;
             }
 
@@ -67,18 +64,16 @@ namespace ProyectoCRUD_BD
 
             cmd.ExecuteNonQuery();
 
-            MessageBox.Show("Cliente agregado exitosamente.");
+            UIStyles.ShowAlert("Cliente agregado exitosamente.");
             CargarClientes();
             LimpiarCampos();
         }
-
-
 
         private void btnEliminarCliente_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(Id_Cliente.Text) || !int.TryParse(Id_Cliente.Text, out int clienteId))
             {
-                MessageBox.Show("Ingrese un ID válido para eliminar.");
+                UIStyles.ShowAlert("Ingrese un ID válido para eliminar.");
                 return;
             }
 
@@ -91,9 +86,9 @@ namespace ProyectoCRUD_BD
             int rows = cmd.ExecuteNonQuery();
 
             if (rows > 0)
-                MessageBox.Show("Cliente eliminado.");
+                UIStyles.ShowAlert("Cliente eliminado.");
             else
-                MessageBox.Show("No existe un cliente con ese ID.");
+                UIStyles.ShowAlert("No existe un cliente con ese ID.");
 
             CargarClientes();
             LimpiarCampos();
@@ -103,7 +98,7 @@ namespace ProyectoCRUD_BD
         {
             if (string.IsNullOrEmpty(Id_Cliente.Text) || !int.TryParse(Id_Cliente.Text, out int clienteId))
             {
-                MessageBox.Show("Ingrese un ID válido para buscar.");
+                UIStyles.ShowAlert("Ingrese un ID válido para buscar.");
                 return;
             }
 
@@ -129,19 +124,16 @@ namespace ProyectoCRUD_BD
             }
             else
             {
-                MessageBox.Show("Cliente no encontrado.");
+                UIStyles.ShowAlert("Cliente no encontrado.");
                 LimpiarCampos();
             }
         }
-
-
-
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             if (!int.TryParse(Id_Cliente.Text, out int clienteId))
             {
-                MessageBox.Show("Ingrese un ID válido.");
+                UIStyles.ShowAlert("Ingrese un ID válido.");
                 return;
             }
 
@@ -170,12 +162,12 @@ namespace ProyectoCRUD_BD
 
                     if (rowsAffected > 0)
                     {
-                        MessageBox.Show("Datos actualizados correctamente.");
+                        UIStyles.ShowAlert("Datos actualizados correctamente.");
                         btnBuscarClientes_Click(null, null);
                     }
                     else
                     {
-                        MessageBox.Show("No se encontró el cliente con ese ID.");
+                        UIStyles.ShowAlert("No se encontró el cliente con ese ID.");
                     }
                 }
             }
@@ -183,14 +175,12 @@ namespace ProyectoCRUD_BD
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
-            CargarClientes(); // Carga todos los clientes en el DataGridView
-
+            CargarClientes();
             LimpiarCampos();
         }
 
         private void CargarClientes()
         {
-
             using var conn = GetConnection();
             conn.Open();
 
@@ -198,9 +188,8 @@ namespace ProyectoCRUD_BD
             cmd.CommandText = "SELECT * FROM Clientes";
 
             using var reader = cmd.ExecuteReader();
-
             DataTable dt = new DataTable();
-            dt.Load(reader);  // ← Esto reemplaza completamente al DataAdapter
+            dt.Load(reader);
 
             MostrarClientes.DataSource = dt;
         }
@@ -221,5 +210,3 @@ namespace ProyectoCRUD_BD
         }
     }
 }
-
-

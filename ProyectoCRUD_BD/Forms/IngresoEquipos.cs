@@ -122,7 +122,7 @@ namespace ProyectoCRUD_BD
             {
                 conn.Open();
 
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Equipo WHERE equipo_id = @id;", conn);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Equipo WHERE id_equipo = @id;", conn);
                 cmd.Parameters.AddWithValue("@id", equipoId);
 
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -160,7 +160,7 @@ namespace ProyectoCRUD_BD
             {
                 conn.Open();
 
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Equipo WHERE equipo_id = @id;", conn);
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Equipo WHERE id_equipo  = @id;", conn);
                 cmd.Parameters.AddWithValue("@id", equipoId);
 
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -201,7 +201,7 @@ namespace ProyectoCRUD_BD
                 {
                     conn.Open();
 
-                    SqlCommand cmd = new SqlCommand("SELECT * FROM Equipo ORDER BY equipo_id", conn);
+                    SqlCommand cmd = new SqlCommand("SELECT * FROM Equipo ORDER BY id_equipo", conn);
 
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     DataTable dt = new DataTable();

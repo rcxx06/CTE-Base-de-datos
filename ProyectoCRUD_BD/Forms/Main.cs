@@ -12,7 +12,9 @@ namespace ProyectoCRUD_BD
         public Main()
         {
             InitializeComponent();
-            UIStyles.ApplyDashboardStyles(this);
+           
+            UIStyles.ApplyAllStyles(this);
+            
             // Registras los paneles en el FormManager
             FormManager.PanelMenu = panelMenu;
             FormManager.PanelContenido = controladorForms;

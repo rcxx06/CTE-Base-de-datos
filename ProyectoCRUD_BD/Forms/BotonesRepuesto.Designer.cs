@@ -37,10 +37,9 @@
             // 
             // btnAtrasRepuesto
             // 
-            btnAtrasRepuesto.Location = new Point(31, 525);
-            btnAtrasRepuesto.Margin = new Padding(3, 4, 3, 4);
+            btnAtrasRepuesto.Location = new Point(27, 394);
             btnAtrasRepuesto.Name = "btnAtrasRepuesto";
-            btnAtrasRepuesto.Size = new Size(97, 43);
+            btnAtrasRepuesto.Size = new Size(85, 32);
             btnAtrasRepuesto.TabIndex = 25;
             btnAtrasRepuesto.Text = "Atras";
             btnAtrasRepuesto.UseVisualStyleBackColor = true;
@@ -48,10 +47,9 @@
             // 
             // BtnTipoRepuesto
             // 
-            BtnTipoRepuesto.Location = new Point(12, 194);
-            BtnTipoRepuesto.Margin = new Padding(3, 4, 3, 4);
+            BtnTipoRepuesto.Location = new Point(10, 146);
             BtnTipoRepuesto.Name = "BtnTipoRepuesto";
-            BtnTipoRepuesto.Size = new Size(150, 41);
+            BtnTipoRepuesto.Size = new Size(131, 31);
             BtnTipoRepuesto.TabIndex = 22;
             BtnTipoRepuesto.Text = "Tipo Repuesto";
             BtnTipoRepuesto.UseVisualStyleBackColor = true;
@@ -59,10 +57,9 @@
             // 
             // btnObtencionRepuesto
             // 
-            btnObtencionRepuesto.Location = new Point(12, 289);
-            btnObtencionRepuesto.Margin = new Padding(3, 4, 3, 4);
+            btnObtencionRepuesto.Location = new Point(10, 217);
             btnObtencionRepuesto.Name = "btnObtencionRepuesto";
-            btnObtencionRepuesto.Size = new Size(150, 54);
+            btnObtencionRepuesto.Size = new Size(131, 40);
             btnObtencionRepuesto.TabIndex = 23;
             btnObtencionRepuesto.Text = "Obtencion Repuesto";
             btnObtencionRepuesto.UseVisualStyleBackColor = true;
@@ -70,10 +67,9 @@
             // 
             // btnRepuesto
             // 
-            btnRepuesto.Location = new Point(12, 96);
-            btnRepuesto.Margin = new Padding(3, 4, 3, 4);
+            btnRepuesto.Location = new Point(10, 72);
             btnRepuesto.Name = "btnRepuesto";
-            btnRepuesto.Size = new Size(150, 41);
+            btnRepuesto.Size = new Size(131, 31);
             btnRepuesto.TabIndex = 21;
             btnRepuesto.Text = "Repuesto";
             btnRepuesto.UseVisualStyleBackColor = true;
@@ -81,10 +77,9 @@
             // 
             // BtnProveedores
             // 
-            BtnProveedores.Location = new Point(12, 392);
-            BtnProveedores.Margin = new Padding(3, 4, 3, 4);
+            BtnProveedores.Location = new Point(10, 294);
             BtnProveedores.Name = "BtnProveedores";
-            BtnProveedores.Size = new Size(150, 41);
+            BtnProveedores.Size = new Size(131, 31);
             BtnProveedores.TabIndex = 24;
             BtnProveedores.Text = "Proveedores";
             BtnProveedores.UseVisualStyleBackColor = true;
@@ -92,16 +87,18 @@
             // 
             // BotonesRepuesto
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1231, 608);
+            ClientSize = new Size(1077, 456);
             Controls.Add(btnAtrasRepuesto);
             Controls.Add(BtnTipoRepuesto);
             Controls.Add(btnObtencionRepuesto);
             Controls.Add(btnRepuesto);
             Controls.Add(BtnProveedores);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "BotonesRepuesto";
             Text = "BotonesRepuesto";
+            Load += BotonesRepuesto_Load;
             ResumeLayout(false);
         }
 

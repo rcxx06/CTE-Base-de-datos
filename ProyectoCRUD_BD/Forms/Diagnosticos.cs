@@ -14,6 +14,7 @@ namespace ProyectoCRUD_BD.Forms
             InitializeComponent();
             CargarDiagnosticos();
             UIStyles.ApplyAllStyles(this);
+            
         }
 
         private SqlConnection GetConnection()
@@ -95,7 +96,7 @@ namespace ProyectoCRUD_BD.Forms
             }
 
             // Validar que equipo existe
-            var checkEquipo = new SqlCommand("SELECT COUNT(*) FROM Equipo WHERE equipo_id = @eqId;", conn);
+            var checkEquipo = new SqlCommand("SELECT COUNT(*) FROM Equipo WHERE id_equipo = @eqId;", conn);
             checkEquipo.Parameters.AddWithValue("@eqId", equipoId);
             int countEquipo = (int)checkEquipo.ExecuteScalar();
             if (countEquipo == 0)
@@ -106,7 +107,7 @@ namespace ProyectoCRUD_BD.Forms
 
             var cmd = new SqlCommand(@"
                 INSERT INTO Diagnosticos 
-                (diagnostico_id, tecnico_id, equipo_id, falla_reportada, diagnostico_real, fecha_hora, fecha, hora)
+                (diagnostico_id, tecnico_id, equipo_id, falla_reportada, diagnostico_real, fecha_hora,)
                 VALUES (@id, @tec, @eq, @falla, @diag, @fechaHora, @fecha, @hora);", conn);
 
             cmd.Parameters.AddWithValue("@id", diagnosticoId);
@@ -302,6 +303,11 @@ namespace ProyectoCRUD_BD.Forms
         }
 
         private void txtDiagnosticoFinal_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

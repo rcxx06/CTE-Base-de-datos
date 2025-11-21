@@ -13,6 +13,7 @@ namespace ProyectoCRUD_BD.Forms
         public BotonesFacturas()
         {
             InitializeComponent();
+            UIStyles.ApplyAllStyles(this);
         }
 
         private void BtnAtrasFacturas_Click(object sender, EventArgs e)

@@ -13,6 +13,7 @@ namespace ProyectoCRUD_BD.Forms
         public BotonesInicio()
         {
             InitializeComponent();
+            UIStyles.ApplyAllStyles(this);
         }
 
         private void BtnIrClientes_Click(object sender, EventArgs e)
