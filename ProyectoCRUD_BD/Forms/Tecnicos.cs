@@ -1,11 +1,12 @@
-﻿using Microsoft.Data.Sqlite;
+﻿using Microsoft.Data.SqlClient;
+using Microsoft.Data.Sqlite;
+using ProyectoCRUD_BD.BDSQL;
 using System.Data;
 
 namespace ProyectoCRUD_BD.Forms
 {
     public partial class Tecnicos : Form
     {
-        string dbPath = @"C:\Users\Usuario\Documents\ProyectoCRUD_BD\ProyectoCRUD_BD\bin\Debug\net10.0-windows\CTE.db";
 
         public Tecnicos()
         {
@@ -15,68 +16,84 @@ namespace ProyectoCRUD_BD.Forms
 
         }
 
-        private SqliteConnection GetConnection()
+        private SqlConnection GetConnection()
         {
-            return new SqliteConnection($"Data Source={dbPath}");
+            return SQLCONECTION.GetConnection();
         }
 
         private void CargarTecnicos()
         {
-            using var conn = GetConnection();
-            conn.Open();
+            try
+            {
+                using var conn = GetConnection();
+                conn.Open();
 
-            var cmd = conn.CreateCommand();
-            cmd.CommandText = "SELECT * FROM Tecnicos;";
+                var cmd = new SqlCommand("SELECT * FROM Tecnicos ORDER BY tecnico_id;", conn);
 
-            using var reader = cmd.ExecuteReader();
-            DataTable dt = new DataTable();
-            dt.Load(reader);
+                using var reader = cmd.ExecuteReader();
+                DataTable dt = new DataTable();
+                dt.Load(reader);
 
-            MostrarTecnicos.DataSource = dt;
+                MostrarTecnicos.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar técnicos: {ex.Message}");
+            }
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
+            if (!int.TryParse(txtId_tecnico.Text, out int tecnicoId))
+            {
+                MessageBox.Show("Ingrese un ID de técnico válido.");
+                return;
+            }
+
             using var conn = GetConnection();
             conn.Open();
 
             // Validar ID único
-            var check = conn.CreateCommand();
-            check.CommandText = "SELECT COUNT(*) FROM Tecnicos WHERE tecnico_id = @id;";
-            check.Parameters.AddWithValue("@id", txtId_tecnico.Text);
+            var check = new SqlCommand("SELECT COUNT(*) FROM Tecnicos WHERE tecnico_id = @id;", conn);
+            check.Parameters.AddWithValue("@id", tecnicoId);
 
-            long count = (long)check.ExecuteScalar();
+            int count = (int)check.ExecuteScalar();
             if (count > 0)
             {
                 MessageBox.Show("El ID ya existe. Ingrese otro.");
                 return;
             }
 
-            var cmd = conn.CreateCommand();
-            cmd.CommandText = @"
+            var cmd = new SqlCommand(@"
                 INSERT INTO Tecnicos (tecnico_id, nombre, especialidad, horario, contacto)
-                VALUES (@id, @nom, @esp, @hor, @cont);";
+                VALUES (@id, @nom, @esp, @hor, @cont);", conn);
 
-            cmd.Parameters.AddWithValue("@id", txtId_tecnico.Text);
-            cmd.Parameters.AddWithValue("@nom", txtNombre.Text);
-            cmd.Parameters.AddWithValue("@esp", txtEspecialidad.Text);
-            cmd.Parameters.AddWithValue("@hor", txtHorario.Text);
-            cmd.Parameters.AddWithValue("@cont", txtContacto.Text);
+            cmd.Parameters.AddWithValue("@id", tecnicoId);
+            cmd.Parameters.AddWithValue("@nom", txtNombre.Text ?? "");
+            cmd.Parameters.AddWithValue("@esp", txtEspecialidad.Text ?? "");
+            cmd.Parameters.AddWithValue("@hor", txtHorario.Text ?? "");
+            cmd.Parameters.AddWithValue("@cont", txtContacto.Text ?? "");
 
             cmd.ExecuteNonQuery();
             MessageBox.Show("Técnico ingresado correctamente.");
             CargarTecnicos();
+            LimpiarCampos();
         }
 
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            if (!int.TryParse(txtId_tecnico.Text, out int tecnicoId))
+            {
+                MessageBox.Show("Ingrese un ID de técnico válido.");
+                return;
+            }
+
             using var conn = GetConnection();
             conn.Open();
 
-            var cmd = conn.CreateCommand();
-            cmd.CommandText = "DELETE FROM Tecnicos WHERE tecnico_id = @id;";
-            cmd.Parameters.AddWithValue("@id", txtId_tecnico.Text);
+            var cmd = new SqlCommand("DELETE FROM Tecnicos WHERE tecnico_id = @id;", conn);
+            cmd.Parameters.AddWithValue("@id", tecnicoId);
 
             int rows = cmd.ExecuteNonQuery();
 
@@ -84,6 +101,7 @@ namespace ProyectoCRUD_BD.Forms
             {
                 MessageBox.Show("Técnico eliminado.");
                 CargarTecnicos();
+                LimpiarCampos();
             }
             else
             {
@@ -93,13 +111,18 @@ namespace ProyectoCRUD_BD.Forms
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            if (!int.TryParse(txtId_tecnico.Text, out int tecnicoId))
+            {
+                MessageBox.Show("Ingrese un ID de técnico válido.");
+                return;
+            }
+
             using var conn = GetConnection();
             conn.Open();
 
             // Buscar técnico
-            var cmd = conn.CreateCommand();
-            cmd.CommandText = "SELECT * FROM Tecnicos WHERE tecnico_id = @id;";
-            cmd.Parameters.AddWithValue("@id", txtId_tecnico.Text);
+            var cmd = new SqlCommand("SELECT * FROM Tecnicos WHERE tecnico_id = @id;", conn);
+            cmd.Parameters.AddWithValue("@id", tecnicoId);
 
             using var reader = cmd.ExecuteReader();
             DataTable dt = new DataTable();
@@ -116,12 +139,11 @@ namespace ProyectoCRUD_BD.Forms
                 txtContacto.Text = dt.Rows[0]["contacto"].ToString();
 
                 // Mostrar solo los campos requeridos de los diagnósticos
-                var diagCmd = conn.CreateCommand();
-                diagCmd.CommandText = @"
-            SELECT diagnostico_id, diagnostico_real, falla_reportada
-            FROM Diagnosticos
-            WHERE tecnico_id = @id;";
-                diagCmd.Parameters.AddWithValue("@id", txtId_tecnico.Text);
+                var diagCmd = new SqlCommand(@"
+                    SELECT diagnostico_id, diagnostico_real, falla_reportada
+                    FROM Diagnosticos
+                    WHERE tecnico_id = @id;", conn);
+                diagCmd.Parameters.AddWithValue("@id", tecnicoId);
 
                 using var diagReader = diagCmd.ExecuteReader();
                 DataTable dtDiag = new DataTable();
@@ -134,28 +156,34 @@ namespace ProyectoCRUD_BD.Forms
                 MessageBox.Show("Técnico no encontrado.");
                 MostrarTecnicos.DataSource = null;
                 Drealizados.DataSource = null;
+                LimpiarCampos();
             }
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
+            if (!int.TryParse(txtId_tecnico.Text, out int tecnicoId))
+            {
+                MessageBox.Show("Ingrese un ID de técnico válido.");
+                return;
+            }
+
             using var conn = GetConnection();
             conn.Open();
 
-            var cmd = conn.CreateCommand();
-            cmd.CommandText = @"
+            var cmd = new SqlCommand(@"
                 UPDATE Tecnicos
                 SET nombre = @nom,
                     especialidad = @esp,
                     horario = @hor,
                     contacto = @cont
-                WHERE tecnico_id = @id;";
+                WHERE tecnico_id = @id;", conn);
 
-            cmd.Parameters.AddWithValue("@id", txtId_tecnico.Text);
-            cmd.Parameters.AddWithValue("@nom", txtNombre.Text);
-            cmd.Parameters.AddWithValue("@esp", txtEspecialidad.Text);
-            cmd.Parameters.AddWithValue("@hor", txtHorario.Text);
-            cmd.Parameters.AddWithValue("@cont", txtContacto.Text);
+            cmd.Parameters.AddWithValue("@id", tecnicoId);
+            cmd.Parameters.AddWithValue("@nom", txtNombre.Text ?? "");
+            cmd.Parameters.AddWithValue("@esp", txtEspecialidad.Text ?? "");
+            cmd.Parameters.AddWithValue("@hor", txtHorario.Text ?? "");
+            cmd.Parameters.AddWithValue("@cont", txtContacto.Text ?? "");
 
             int rows = cmd.ExecuteNonQuery();
 
@@ -173,7 +201,11 @@ namespace ProyectoCRUD_BD.Forms
         private void btnMostrar_Click(object sender, EventArgs e)
         {
             CargarTecnicos();
+            LimpiarCampos();
+        }
 
+        private void LimpiarCampos()
+        {
             txtId_tecnico.Clear();
             txtNombre.Clear();
             txtEspecialidad.Clear();

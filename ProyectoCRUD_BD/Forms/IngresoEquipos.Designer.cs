@@ -52,70 +52,73 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(64, 36);
+            label1.Location = new Point(31, 48);
             label1.Name = "label1";
-            label1.Size = new Size(58, 15);
+            label1.Size = new Size(75, 20);
             label1.TabIndex = 0;
             label1.Text = "Equipo ID";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(222, 36);
+            label2.Location = new Point(179, 48);
             label2.Name = "label2";
-            label2.Size = new Size(58, 15);
+            label2.Size = new Size(74, 20);
             label2.TabIndex = 1;
             label2.Text = "Cliente ID";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(64, 97);
+            label3.Location = new Point(31, 129);
             label3.Name = "label3";
-            label3.Size = new Size(40, 15);
+            label3.Size = new Size(50, 20);
             label3.TabIndex = 2;
             label3.Text = "Marca";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(185, 218);
+            label4.Location = new Point(179, 291);
             label4.Name = "label4";
-            label4.Size = new Size(31, 15);
+            label4.Size = new Size(39, 20);
             label4.TabIndex = 3;
             label4.Text = "Tipo";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(64, 154);
+            label5.Location = new Point(31, 205);
             label5.Name = "label5";
-            label5.Size = new Size(82, 15);
+            label5.Size = new Size(104, 20);
             label5.TabIndex = 4;
             label5.Text = "Numero Serial";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(64, 218);
+            label6.Location = new Point(31, 291);
             label6.Name = "label6";
-            label6.Size = new Size(48, 15);
+            label6.Size = new Size(61, 20);
             label6.TabIndex = 5;
             label6.Text = "Modelo";
             // 
             // MostrarEquipos
             // 
             MostrarEquipos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            MostrarEquipos.Location = new Point(328, 10);
+            MostrarEquipos.Location = new Point(375, 13);
+            MostrarEquipos.Margin = new Padding(3, 4, 3, 4);
             MostrarEquipos.Name = "MostrarEquipos";
-            MostrarEquipos.Size = new Size(460, 185);
+            MostrarEquipos.RowHeadersWidth = 51;
+            MostrarEquipos.Size = new Size(526, 247);
             MostrarEquipos.TabIndex = 6;
             // 
             // btnIngresarEquipo
             // 
-            btnIngresarEquipo.Location = new Point(326, 218);
+            btnIngresarEquipo.Location = new Point(31, 381);
+            btnIngresarEquipo.Margin = new Padding(3, 4, 3, 4);
             btnIngresarEquipo.Name = "btnIngresarEquipo";
-            btnIngresarEquipo.Size = new Size(92, 41);
+            btnIngresarEquipo.Size = new Size(105, 55);
             btnIngresarEquipo.TabIndex = 7;
             btnIngresarEquipo.Text = "INGRESO";
             btnIngresarEquipo.UseVisualStyleBackColor = true;
@@ -123,9 +126,10 @@
             // 
             // btnEliminarEquipos
             // 
-            btnEliminarEquipos.Location = new Point(454, 218);
+            btnEliminarEquipos.Location = new Point(177, 381);
+            btnEliminarEquipos.Margin = new Padding(3, 4, 3, 4);
             btnEliminarEquipos.Name = "btnEliminarEquipos";
-            btnEliminarEquipos.Size = new Size(106, 41);
+            btnEliminarEquipos.Size = new Size(121, 55);
             btnEliminarEquipos.TabIndex = 8;
             btnEliminarEquipos.Text = "ELIMINAR";
             btnEliminarEquipos.UseVisualStyleBackColor = true;
@@ -133,9 +137,10 @@
             // 
             // btnBuscarEquipo
             // 
-            btnBuscarEquipo.Location = new Point(326, 317);
+            btnBuscarEquipo.Location = new Point(31, 444);
+            btnBuscarEquipo.Margin = new Padding(3, 4, 3, 4);
             btnBuscarEquipo.Name = "btnBuscarEquipo";
-            btnBuscarEquipo.Size = new Size(113, 36);
+            btnBuscarEquipo.Size = new Size(129, 48);
             btnBuscarEquipo.TabIndex = 9;
             btnBuscarEquipo.Text = "BUSCAR";
             btnBuscarEquipo.UseVisualStyleBackColor = true;
@@ -143,51 +148,58 @@
             // 
             // txtEquipoID
             // 
-            txtEquipoID.Location = new Point(70, 61);
+            txtEquipoID.Location = new Point(31, 81);
+            txtEquipoID.Margin = new Padding(3, 4, 3, 4);
             txtEquipoID.Name = "txtEquipoID";
-            txtEquipoID.Size = new Size(100, 23);
+            txtEquipoID.Size = new Size(114, 27);
             txtEquipoID.TabIndex = 10;
             // 
             // txtId_cliente
             // 
-            txtId_cliente.Location = new Point(222, 61);
+            txtId_cliente.Location = new Point(179, 81);
+            txtId_cliente.Margin = new Padding(3, 4, 3, 4);
             txtId_cliente.Name = "txtId_cliente";
-            txtId_cliente.Size = new Size(100, 23);
+            txtId_cliente.Size = new Size(114, 27);
             txtId_cliente.TabIndex = 11;
             // 
             // txtMarca
             // 
-            txtMarca.Location = new Point(64, 115);
+            txtMarca.Location = new Point(31, 153);
+            txtMarca.Margin = new Padding(3, 4, 3, 4);
             txtMarca.Name = "txtMarca";
-            txtMarca.Size = new Size(100, 23);
+            txtMarca.Size = new Size(114, 27);
             txtMarca.TabIndex = 12;
             // 
             // txtSerialNumber
             // 
-            txtSerialNumber.Location = new Point(64, 172);
+            txtSerialNumber.Location = new Point(31, 229);
+            txtSerialNumber.Margin = new Padding(3, 4, 3, 4);
             txtSerialNumber.Name = "txtSerialNumber";
-            txtSerialNumber.Size = new Size(100, 23);
+            txtSerialNumber.Size = new Size(114, 27);
             txtSerialNumber.TabIndex = 13;
             // 
             // txtModelo
             // 
-            txtModelo.Location = new Point(33, 236);
+            txtModelo.Location = new Point(31, 315);
+            txtModelo.Margin = new Padding(3, 4, 3, 4);
             txtModelo.Name = "txtModelo";
-            txtModelo.Size = new Size(100, 23);
+            txtModelo.Size = new Size(114, 27);
             txtModelo.TabIndex = 14;
             // 
             // txtTipoEquipo
             // 
-            txtTipoEquipo.Location = new Point(157, 236);
+            txtTipoEquipo.Location = new Point(179, 315);
+            txtTipoEquipo.Margin = new Padding(3, 4, 3, 4);
             txtTipoEquipo.Name = "txtTipoEquipo";
-            txtTipoEquipo.Size = new Size(100, 23);
+            txtTipoEquipo.Size = new Size(114, 27);
             txtTipoEquipo.TabIndex = 15;
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(454, 317);
+            btnActualizar.Location = new Point(177, 444);
+            btnActualizar.Margin = new Padding(3, 4, 3, 4);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(106, 36);
+            btnActualizar.Size = new Size(121, 48);
             btnActualizar.TabIndex = 16;
             btnActualizar.Text = "ACTUALIZAR";
             btnActualizar.UseVisualStyleBackColor = true;
@@ -195,9 +207,10 @@
             // 
             // btnMostrar
             // 
-            btnMostrar.Location = new Point(605, 264);
+            btnMostrar.Location = new Point(590, 333);
+            btnMostrar.Margin = new Padding(3, 4, 3, 4);
             btnMostrar.Name = "btnMostrar";
-            btnMostrar.Size = new Size(104, 39);
+            btnMostrar.Size = new Size(119, 52);
             btnMostrar.TabIndex = 17;
             btnMostrar.Text = "MOSTRAR TODOS";
             btnMostrar.UseVisualStyleBackColor = true;
@@ -205,9 +218,9 @@
             // 
             // IngresoEquipos
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 398);
+            ClientSize = new Size(914, 531);
             Controls.Add(btnMostrar);
             Controls.Add(btnActualizar);
             Controls.Add(txtTipoEquipo);
@@ -226,6 +239,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "IngresoEquipos";
             Text = "Form2";
             Load += IngresoEquipos_Load;

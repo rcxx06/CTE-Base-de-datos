@@ -1,4 +1,6 @@
-﻿using Microsoft.Data.Sqlite;
+﻿using Microsoft.Data.SqlClient;
+using Microsoft.Data.Sqlite;
+using ProyectoCRUD_BD.BDSQL;
 using System.Data;
 using System.Data.SQLite;
 
@@ -6,7 +8,7 @@ namespace ProyectoCRUD_BD
 {
     public partial class IngresoCLientes : Form
     {
-        string dbPath = @"C:\Users\Usuario\Documents\ProyectoCRUD_BD\ProyectoCRUD_BD\bin\Debug\net10.0-windows\CTE.db";
+        //string dbPath = @"C:\Users\Usuario\Documents\ProyectoCRUD_BD\ProyectoCRUD_BD\bin\Debug\net10.0-windows\CTE.db";
 
         public IngresoCLientes()
         {
@@ -16,18 +18,22 @@ namespace ProyectoCRUD_BD
 
         }
 
-
-        private SqliteConnection GetConnection()
+        private SqlConnection GetConnection()
         {
-            return new SqliteConnection($"Data Source={dbPath}");
+            return SQLCONECTION.GetConnection();
         }
-
 
         private void btnIngresoClientes_Click(object sender, EventArgs e)
         {
-            if (Id_Cliente.Text == "")
+            if (string.IsNullOrEmpty(Id_Cliente.Text))
             {
                 MessageBox.Show("Debe ingresar un ID para el cliente.");
+                return;
+            }
+
+            if (!int.TryParse(Id_Cliente.Text, out int clienteId))
+            {
+                MessageBox.Show("El ID debe ser un número válido.");
                 return;
             }
 
@@ -35,11 +41,10 @@ namespace ProyectoCRUD_BD
             conn.Open();
 
             // Validar si ya existe el ID
-            var check = conn.CreateCommand();
-            check.CommandText = "SELECT COUNT(*) FROM Clientes WHERE cliente_id = @id;";
-            check.Parameters.AddWithValue("@id", Id_Cliente.Text);
+            var check = new SqlCommand("SELECT COUNT(*) FROM Clientes WHERE cliente_id = @id;", conn);
+            check.Parameters.AddWithValue("@id", clienteId);
 
-            long count = (long)check.ExecuteScalar();
+            int count = (int)check.ExecuteScalar();
             if (count > 0)
             {
                 MessageBox.Show("El ID ingresado ya existe. Ingrese otro ID.");
@@ -47,37 +52,41 @@ namespace ProyectoCRUD_BD
             }
 
             // Insertar cliente
-            var cmd = conn.CreateCommand();
-            cmd.CommandText = @"
+            var cmd = new SqlCommand(@"
                 INSERT INTO Clientes 
                 (cliente_id, nombre, telefono, direccion, correo, contacto_secundario)
                 VALUES
-                (@id, @n, @t, @d, @c, @cs);
-            ";
+                (@id, @n, @t, @d, @c, @cs);", conn);
 
-            cmd.Parameters.AddWithValue("@id", Id_Cliente.Text);
-            cmd.Parameters.AddWithValue("@n", Nombre_Cliente.Text);
-            cmd.Parameters.AddWithValue("@t", TelefonoBox.Text);
-            cmd.Parameters.AddWithValue("@d", DireccionBox.Text);
-            cmd.Parameters.AddWithValue("@c", CorreoBox.Text);
-            cmd.Parameters.AddWithValue("@cs", Contacto2.Text);
+            cmd.Parameters.AddWithValue("@id", clienteId);
+            cmd.Parameters.AddWithValue("@n", Nombre_Cliente.Text ?? "");
+            cmd.Parameters.AddWithValue("@t", TelefonoBox.Text ?? "");
+            cmd.Parameters.AddWithValue("@d", DireccionBox.Text ?? "");
+            cmd.Parameters.AddWithValue("@c", CorreoBox.Text ?? "");
+            cmd.Parameters.AddWithValue("@cs", Contacto2.Text ?? "");
 
             cmd.ExecuteNonQuery();
 
             MessageBox.Show("Cliente agregado exitosamente.");
             CargarClientes();
+            LimpiarCampos();
         }
 
 
 
         private void btnEliminarCliente_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(Id_Cliente.Text) || !int.TryParse(Id_Cliente.Text, out int clienteId))
+            {
+                MessageBox.Show("Ingrese un ID válido para eliminar.");
+                return;
+            }
+
             using var conn = GetConnection();
             conn.Open();
 
-            var cmd = conn.CreateCommand();
-            cmd.CommandText = "DELETE FROM Clientes WHERE cliente_id = @id;";
-            cmd.Parameters.AddWithValue("@id", Id_Cliente.Text);
+            var cmd = new SqlCommand("DELETE FROM Clientes WHERE cliente_id = @id;", conn);
+            cmd.Parameters.AddWithValue("@id", clienteId);
 
             int rows = cmd.ExecuteNonQuery();
 
@@ -87,20 +96,26 @@ namespace ProyectoCRUD_BD
                 MessageBox.Show("No existe un cliente con ese ID.");
 
             CargarClientes();
+            LimpiarCampos();
         }
 
         private void btnBuscarClientes_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(Id_Cliente.Text) || !int.TryParse(Id_Cliente.Text, out int clienteId))
+            {
+                MessageBox.Show("Ingrese un ID válido para buscar.");
+                return;
+            }
+
             using var conn = GetConnection();
             conn.Open();
 
-            var cmd = conn.CreateCommand();
-            cmd.CommandText = "SELECT * FROM Clientes WHERE cliente_id = @id;";
-            cmd.Parameters.AddWithValue("@id", Id_Cliente.Text);
+            var cmd = new SqlCommand("SELECT * FROM Clientes WHERE cliente_id = @id;", conn);
+            cmd.Parameters.AddWithValue("@id", clienteId);
 
             using var reader = cmd.ExecuteReader();
             DataTable dt = new DataTable();
-            dt.Load(reader); // Carga solo el cliente buscado
+            dt.Load(reader);
             MostrarClientes.DataSource = dt;
 
             if (dt.Rows.Count > 0)
@@ -115,6 +130,7 @@ namespace ProyectoCRUD_BD
             else
             {
                 MessageBox.Show("Cliente no encontrado.");
+                LimpiarCampos();
             }
         }
 
@@ -141,21 +157,20 @@ namespace ProyectoCRUD_BD
                              contacto_secundario = @contactoSecundario
                          WHERE cliente_id = @id;";
 
-                using (var cmd = new SqliteCommand(query, connection))
+                using (var cmd = new SqlCommand(query, connection))
                 {
                     cmd.Parameters.AddWithValue("@id", clienteId);
-                    cmd.Parameters.AddWithValue("@nombre", Nombre_Cliente.Text);
-                    cmd.Parameters.AddWithValue("@telefono", TelefonoBox.Text);
-                    cmd.Parameters.AddWithValue("@direccion", DireccionBox.Text);
-                    cmd.Parameters.AddWithValue("@correo", CorreoBox.Text);
-                    cmd.Parameters.AddWithValue("@contactoSecundario", Contacto2.Text);
+                    cmd.Parameters.AddWithValue("@nombre", Nombre_Cliente.Text ?? "");
+                    cmd.Parameters.AddWithValue("@telefono", TelefonoBox.Text ?? "");
+                    cmd.Parameters.AddWithValue("@direccion", DireccionBox.Text ?? "");
+                    cmd.Parameters.AddWithValue("@correo", CorreoBox.Text ?? "");
+                    cmd.Parameters.AddWithValue("@contactoSecundario", Contacto2.Text ?? "");
 
                     int rowsAffected = cmd.ExecuteNonQuery();
 
                     if (rowsAffected > 0)
                     {
                         MessageBox.Show("Datos actualizados correctamente.");
-                        // Refresca la tabla mostrando solo el cliente actualizado
                         btnBuscarClientes_Click(null, null);
                     }
                     else
@@ -170,13 +185,7 @@ namespace ProyectoCRUD_BD
         {
             CargarClientes(); // Carga todos los clientes en el DataGridView
 
-            // Limpiar campos de búsqueda si quieres
-            Id_Cliente.Clear();
-            Nombre_Cliente.Clear();
-            TelefonoBox.Clear();
-            DireccionBox.Clear();
-            CorreoBox.Clear();
-            Contacto2.Clear();
+            LimpiarCampos();
         }
 
         private void CargarClientes()
@@ -199,6 +208,16 @@ namespace ProyectoCRUD_BD
         private void IngresoCLientes_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void LimpiarCampos()
+        {
+            Id_Cliente.Clear();
+            Nombre_Cliente.Clear();
+            TelefonoBox.Clear();
+            DireccionBox.Clear();
+            CorreoBox.Clear();
+            Contacto2.Clear();
         }
     }
 }

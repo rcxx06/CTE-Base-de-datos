@@ -1,7 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="Forms\BotonesClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\BotonesFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\BotonesInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\BotonesRepuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Diagnosticos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Facturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Garantias.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\IngresoCLientes.cs">
@@ -13,7 +31,28 @@
     <Compile Update="Forms\Main.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\ObtencionRepuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Ordenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Presentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Proovedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Repuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\RepuestosUsados.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Tecnicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\TipoRepuestos.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

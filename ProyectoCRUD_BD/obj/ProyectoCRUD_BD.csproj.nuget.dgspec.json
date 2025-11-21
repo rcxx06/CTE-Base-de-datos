@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj": {}
+    "C:\\Users\\Sadiel\\source\\repos\\CTE-Base-de-datos\\ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj": {
+    "C:\\Users\\Sadiel\\source\\repos\\CTE-Base-de-datos\\ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj",
+        "projectUniqueName": "C:\\Users\\Sadiel\\source\\repos\\CTE-Base-de-datos\\ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj",
         "projectName": "ProyectoCRUD_BD",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\ProyectoCRUD_BD\\ProyectoCRUD_BD\\obj\\",
+        "projectPath": "C:\\Users\\Sadiel\\source\\repos\\CTE-Base-de-datos\\ProyectoCRUD_BD\\ProyectoCRUD_BD.csproj",
+        "packagesPath": "C:\\Users\\Sadiel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sadiel\\source\\repos\\CTE-Base-de-datos\\ProyectoCRUD_BD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Sadiel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

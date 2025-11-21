@@ -6,6 +6,7 @@ namespace ProyectoCRUD_BD
 {
     public static class Inicializador
     {
+        /*
         // Ruta de tu base de datos
         private static readonly string dbPath = @"C:\Users\Usuario\Documents\ProyectoCRUD_BD\ProyectoCRUD_BD\bin\Debug\net10.0-windows\CTE.db";
 
@@ -36,5 +37,6 @@ namespace ProyectoCRUD_BD
             using var command = new SqliteCommand(query, connection);
             command.ExecuteNonQuery();
         }
+        */
     }
 }

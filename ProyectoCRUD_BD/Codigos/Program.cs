@@ -12,7 +12,7 @@ namespace ProyectoCRUD_BD.Codigos
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Main());
-            ProyectoCRUD_BD.Inicializador.GetConnection().Open();
+            //ProyectoCRUD_BD.Inicializador.GetConnection().Open();
 
 
         }
